@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#link {
+    font-family: 'AKONY';
+    font-size: 32px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'AKONY';
+    font-size: 32px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+#simple {
+	margin-left: 175px;
+	margin-top: 57px;
+    vertical-align: top
+}
+
+#enter {
+    margin-left: 508px;
+    margin-top: -67px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;
+    vertical-align: top           
+}
+
+#reg {
+    margin-left: 50px;
+    margin-top: -67px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;  
+    vertical-align: top         
+}
+
+#board {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+body {
+    display: block;
+    overflow-x: hidden;
+    width: 1920px;
+    height: 1080px;
+}
+
+#mines {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;  
+    vertical-align: top         
+}
+
+#coin {
+    width: 600px;
+    height: 600px;
+    margin-top: 25px;
+    border-radius: 50%;
+    background-color: #DEA9FA;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin-left: 815px;
+    font-family: 'GT Eesti Pro Display';
+    cursor: pointer;
+    user-select: none; 
+    transition: background-color 0.3s ease;
+}
+
+#coin:hover {
+    background-color: #BDB1FB;
+}
+
+#result {
+    font-size: 24px;
+    font-family: 'GT Eesti Pro Display';
+    margin-top: -625px;
+    margin-left: 25px;
+}
+
+#guess-container {
+    margin-bottom: 10px;
+}
+
+#guess-heads {
+    margin-left: 25px;
+    width: 300px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 48px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #DEA9FA;
+    color: white;
+    border: none;
+    border-radius: 90px;
+    transition: background-color 0.3s ease;
+    font-family: 'GT Eesti Pro Display';
+
+}
+#guess-tails {
+    width: 300px;
+    height: 100px;
+    padding: 10px 20px;
+    font-size: 48px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #BDB1FB;
+    color: white;
+    border: none;
+    border-radius: 90px;
+    transition: background-color 0.3s ease;
+    font-family: 'GT Eesti Pro Display';
+}
+
+button:hover {
+    background-color: #367c39;
+}
+
+
+#tg {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 732px;
+}
+
+#balance {
+    margin-top: -67px;
+    margin-left: 745px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;  
+    vertical-align: top;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'GT Eesti Pro Display';
+}
+
+#coin_btn {
+    margin-top: -605px;
+    margin-left: 985px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;  
+    vertical-align: top  
+}
+
+#user {
+    margin-left: 25px;
+    margin-top: -67px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;  
+    vertical-align: top   
+}
+
+.pop_up {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.pop_up.active {
+    display: block;
+}
+
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body {
+    margin: auto;
+    background-color: white;
+    position: relative;
+    border-radius: 90px;
+    width: 800px;
+    height: 638px;
+    text-align: center;
+}
+
+#pop_text {
+    font-family: 'AKONY';   
+    font-size: 48px;
+    color: black;
+    margin-top: 50px;
+}
+
+#pop_enter {
+    margin-top: 50px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;
+}
+
+.pop_up_body input {
+    display: block;
+    margin-left: 50px;
+    width: 700px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #BDB1FB;
+    border-radius: 90px;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 32px;
+    border: none;
+    text-align: center;
+}
+
+.pop_up_body input:focus {
+    outline: none;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.pop_up2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+.pop_up2.active {
+    display: block;
+}
+
+.pop_up_container2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body2 {
+    margin: auto;
+    background-color: white;
+    position: relative;
+    border-radius: 90px;
+    width: 800px;
+    height: 638px;
+    text-align: center;
+}
+
+#pop_text2 {
+    font-family: 'AKONY';   
+    font-size: 48px;
+    color: black;
+    margin-top: 50px;
+}
+
+#pop_enter2 {
+    margin-top: 50px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;
+}
+
+.pop_up_body2 input {
+    display: block;
+    margin-left: 50px;
+    width: 700px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #DEA9FA;
+    border-radius: 90px;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 32px;
+    border: none;
+    text-align: center;
+}
+
+.pop_up_body2 input:focus {
+    outline: none;
+}
+
+.pop_up_close2 {
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.pop_up4 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+}
+
+.pop_up4.active {
+    display: block;
+}
+
+.pop_up_container4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_body4 {
+    margin: auto;
+    background-color: white;
+    position: relative;
+    border-radius: 90px;
+    width: 800px;
+    height: 350px;
+    text-align: center;
+}
+
+#pop_text4 {
+    font-family: 'Russo One';   
+    font-size: 20px;
+    color: black;
+    margin-top: 7px;
+}
+
+#pop_enter4 {
+    margin-top: 50px;
+    background-color: transparent;
+    border: none;               
+    cursor: pointer;
+}
+
+.pop_up_body4 input {
+    display: block;
+    margin-left: 50px;
+    width: 700px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #DEA9FA;
+    border-radius: 90px;
+    font-family: 'GT Eesti Pro Display';
+    font-size: 32px;
+    border: none;
+    text-align: center;
+}
+
+.pop_up_body4 input:focus {
+    outline: none;
+}
+
+.pop_up_close4 {
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.pop_up6 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+}
+
+.pop_up6.active {
+    display: block;
+}
+
+.pop_up_container6 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.pop_up_body6 {
+    margin: auto;
+    background-color: white;
+    position: relative;
+    border-radius: 90px;
+    width: 800px;
+    height: 350px;
+    text-align: center;
+}
+
+#pop_text6_1 {
+    font-family: 'Russo One';   
+    font-size: 48px;
+    color: black;
+    margin-top: 50px
+}
+
+#pop_text6_2 {
+    font-family: 'Russo One';   
+    font-size: 48px;
+    color: black;
+    margin-top: 25px
+}
+
+#data {
+    font-family: 'Russo One';   
+    font-size: 48px;
+    color: #DEA9FA;
+    margin-top: 5px
+}
+
+.pop_up_close6 {
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 2px;
+    border: 1px solid black;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.cell.revealed {
+    background-color: #eee;
+    cursor: default;
+}
+.cell.bomb {
+    background-color: red;
+    color: white;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}

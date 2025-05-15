@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}"/>
+</head>
+<body>
+	<p id="simple">simple</p>
+	<button id='enter'><img src="{{url_for('static', filename='css/enter.png')}}" alt="?"></button>
+	<div class="pop_up" id="pop_up">	
+		<div class="pop_up_container">
+			<div class="pop_up_body" id="pop_up_body">
+				<p id="pop_text">вход</p>
+				<form action="authorized">
+					<input type='text' placeholder="login">
+					<input type='text' placeholder="password">
+					<button id='pop_enter'><img src="{{url_for('static', filename='css/pop_enter.png')}}" alt="?"></button>
+				</form>
+				<div class="pop_up_close" id="pop_up_close">✕</div>
+			</div>
+		</div>	
+	</div>
+	<button id='reg'><img src="{{url_for('static', filename='css/register.png')}}" alt="?"></button>
+	<div class="pop_up2" id="pop_up2">
+		<div class="pop_up_container2">
+			<div class="pop_up_body2" id="pop_up_body2">
+				<p id="pop_text2">регистрация</p>
+				<form action="authorized">
+					<input type='text' id="login" placeholder="login">
+					<input type='text' id="password" placeholder="password">
+					<button id='pop_enter2'><img src="{{url_for('static', filename='css/pop_reg.png')}}" alt="?"></button>
+				</form>
+				<div class="pop_up_close2" id="pop_up_close2">✕</div>
+			</div>
+		</div>	
+	</div>
+	<img id='board' src="{{url_for('static', filename='css/board.png')}}" alt="?">
+	<img id='tg' src="{{url_for('static', filename='css/tg.png')}}" alt="?">
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 

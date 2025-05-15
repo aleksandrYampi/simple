@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}"/>
+</head>
+<body>
+	<p id="simple">simple</p>
+	<div class="pop_up4" id="pop_up4">
+		<div class="pop_up_container4">
+			<div class="pop_up_body4" id="pop_up_body4">
+				<form action="">
+					<input type='text' id="amount" placeholder="сумма*">
+					<button id='pop_enter4'><img src="{{url_for('static', filename='css/top_up.png')}}" alt="?"></button>
+				</form>
+				<div class="pop_up_close4" id="pop_up_close4">✕</div>
+				<p id="pop_text4">*в рублях</p>
+			</div>
+		</div>	
+	</div>
+    <button id='balance'><img src="{{url_for('static', filename='css/balance.png')}}" alt="?"></button>
+
+    <button id='user'><img src="{{url_for('static', filename='css/user.png')}}" alt="?"></button>
+	<div class="pop_up6" id="pop_up6">
+		<div class="pop_up_container6">
+			<div class="pop_up_body6" id="pop_up_body6">
+				<form action="">
+					<p id="pop_text6_1">login :</p>
+					<p id="data">Yampolsky</p>
+					<p id="pop_text6_2">password :</p>
+					<p id="data">23Aleks03111</p>
+				</form>
+				<div class="pop_up_close6" id="pop_up_close6">✕</div>
+			</div>
+		</div>	
+	</div>
+	<img id='board' src="{{url_for('static', filename='css/board.png')}}" alt="?">
+	<form action="mines">
+	<button id='mines'><img src="{{url_for('static', filename='css/mines.png')}}" alt="?"></button>
+	</form>
+	<form action="coin">
+		<button id='coin_btn'><img src="{{url_for('static', filename='css/coin.png')}}" alt="?"></button>
+	</form>
+	<img id='tg' src="{{url_for('static', filename='css/tg.png')}}" alt="?">
+	<script type='text/javascript' src="{{ url_for('static', filename='js/second_script.js') }}"></script>
+</body>
+</html> 
